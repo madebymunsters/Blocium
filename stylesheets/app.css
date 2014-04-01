@@ -9525,17 +9525,17 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 11, ../scss/_overrides.scss */
+/* line 14, ../scss/_overrides.scss */
 .row {
   max-width: 42em;
 }
 
-/* line 15, ../scss/_overrides.scss */
+/* line 18, ../scss/_overrides.scss */
 body {
   font-family: "Gentium Book Basic", Georgia, serif;
 }
 
-/* line 19, ../scss/_overrides.scss */
+/* line 22, ../scss/_overrides.scss */
 .header-image {
   position: relative;
   width: 100%;
@@ -9544,7 +9544,19 @@ body {
   top: 0;
   left: 0;
 }
-/* line 26, ../scss/_overrides.scss */
+@media screen and (max-width: 480px) {
+  /* line 22, ../scss/_overrides.scss */
+  .header-image {
+    height: 330px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 22, ../scss/_overrides.scss */
+  .header-image {
+    height: 450px;
+  }
+}
+/* line 35, ../scss/_overrides.scss */
 .header-image div {
   position: fixed;
   width: 100%;
@@ -9553,23 +9565,47 @@ body {
   background-size: cover;
   background-position: center center;
 }
-/* line 33, ../scss/_overrides.scss */
+@media screen and (max-width: 480px) {
+  /* line 35, ../scss/_overrides.scss */
+  .header-image div {
+    height: 330px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 35, ../scss/_overrides.scss */
+  .header-image div {
+    height: 450px;
+  }
+}
+/* line 48, ../scss/_overrides.scss */
 .header-image div.blur {
   opacity: 0;
 }
 
-/* line 38, ../scss/_overrides.scss */
+/* line 53, ../scss/_overrides.scss */
 header {
   z-index: 1;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 43, ../scss/_overrides.scss */
+@media screen and (max-width: 767px) {
+  /* line 53, ../scss/_overrides.scss */
+  header {
+    padding: 0 2em;
+  }
+}
+/* line 61, ../scss/_overrides.scss */
 header .blocium {
   margin: 2em 0 0 2em;
 }
-/* line 46, ../scss/_overrides.scss */
+@media screen and (max-width: 767px) {
+  /* line 61, ../scss/_overrides.scss */
+  header .blocium {
+    margin: 2em 0 0;
+  }
+}
+/* line 67, ../scss/_overrides.scss */
 header h1 {
   color: white;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -9578,19 +9614,39 @@ header h1 {
   font-weight: 700;
   padding-top: 4em;
 }
-/* line 54, ../scss/_overrides.scss */
+@media screen and (max-width: 480px) {
+  /* line 67, ../scss/_overrides.scss */
+  header h1 {
+    font-size: 1.8em;
+    padding-top: 1em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 67, ../scss/_overrides.scss */
+  header h1 {
+    font-size: 2.2em;
+    padding-top: 3em;
+  }
+}
+/* line 83, ../scss/_overrides.scss */
 header h2 {
   color: #ececec;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 1.375em;
   font-weight: 300;
 }
-/* line 60, ../scss/_overrides.scss */
+@media screen and (max-width: 480px) {
+  /* line 83, ../scss/_overrides.scss */
+  header h2 {
+    font-size: 1em;
+  }
+}
+/* line 92, ../scss/_overrides.scss */
 header .avatar {
   display: inline-block;
   margin-right: 0.5em;
 }
-/* line 63, ../scss/_overrides.scss */
+/* line 95, ../scss/_overrides.scss */
 header .avatar img {
   border: 2px solid #fff;
   -webkit-border-radius: 50%;
@@ -9607,11 +9663,11 @@ header .avatar img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   display: inline-block;
 }
-/* line 72, ../scss/_overrides.scss */
+/* line 104, ../scss/_overrides.scss */
 header #byline {
   display: inline-block;
 }
-/* line 74, ../scss/_overrides.scss */
+/* line 106, ../scss/_overrides.scss */
 header #byline p.byline, header #byline p.date {
   color: white;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -9621,25 +9677,31 @@ header #byline p.byline, header #byline p.date {
   margin: 0 0 0.5em;
 }
 
-/* line 85, ../scss/_overrides.scss */
+/* line 117, ../scss/_overrides.scss */
 #content {
   position: relative;
   background: white;
   z-index: 1;
   padding: 2em 0;
 }
-/* line 90, ../scss/_overrides.scss */
+@media screen and (max-width: 767px) {
+  /* line 117, ../scss/_overrides.scss */
+  #content {
+    padding: 2em;
+  }
+}
+/* line 125, ../scss/_overrides.scss */
 #content figure {
   padding: 1em 0;
   margin: 0;
 }
-/* line 93, ../scss/_overrides.scss */
+/* line 128, ../scss/_overrides.scss */
 #content figure img {
   width: 100%;
   height: auto;
   margin-bottom: 1em;
 }
-/* line 98, ../scss/_overrides.scss */
+/* line 133, ../scss/_overrides.scss */
 #content figure figcaption {
   font-family: "Gentium Book Basic", Georgia, serif;
   color: #999999;
@@ -9647,13 +9709,13 @@ header #byline p.byline, header #byline p.date {
   font-style: italic;
   margin-bottom: 1em;
 }
-/* line 106, ../scss/_overrides.scss */
+/* line 141, ../scss/_overrides.scss */
 #content hr {
   border: 2px solid #999999;
   width: 10em;
   margin: 2em auto;
 }
-/* line 111, ../scss/_overrides.scss */
+/* line 146, ../scss/_overrides.scss */
 #content blockquote {
   color: #333333;
   font-family: "Gentium Book Basic", Georgia, serif;
@@ -9664,4 +9726,16 @@ header #byline p.byline, header #byline p.date {
   line-height: 1.2;
   padding: 0;
   border: none;
+}
+@media screen and (max-width: 767px) {
+  /* line 146, ../scss/_overrides.scss */
+  #content blockquote {
+    margin: 1em 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 920px) {
+  /* line 146, ../scss/_overrides.scss */
+  #content blockquote {
+    margin: 1em 0;
+  }
 }
